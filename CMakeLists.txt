@@ -15,7 +15,8 @@ foreach(CPP_FILE ${CPP_FILES})
     get_filename_component(TARGET_NAME ${CPP_FILE} NAME_WE)
 
     # ターゲット名が重複しないよう注意（異なるフォルダに同名ファイルがある場合）
-    add_executable(${TARGET_NAME} ${CPP_FILE})
+    add_executable(${TARGET_NAME} ${CPP_FILE}
+            ITP1/ITP1_1_B.cpp)
 
     # 必要であればコンパイルオプションを追加
     target_compile_options(${TARGET_NAME} PRIVATE -Wall -Wextra)
