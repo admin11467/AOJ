@@ -37,8 +37,7 @@ if(CP_BUILD_ALL)
         string(REPLACE "/" "_" TARGET_NAME "${CPP_FILE}")
         string(REPLACE ".cpp" "" TARGET_NAME "${TARGET_NAME}")
 
-        add_executable("${TARGET_NAME}" "${CPP_FILE}"
-                ITP1/ITP1_1_D.cpp)
+        add_executable("${TARGET_NAME}" "${CPP_FILE}")
 
         if(MSVC)
             target_compile_options("${TARGET_NAME}" PRIVATE /W4)
