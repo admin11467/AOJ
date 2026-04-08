@@ -2,8 +2,6 @@
 #include <vector>
 
 int main() {
-    int i =0;
-    bool flag = false;
     std::vector<int> v;
 
     while (true){
@@ -12,16 +10,10 @@ int main() {
 
         std::cin >> a;
         if (a == 0) {
-            flag = true;
+            break;
         }else {
             v.push_back(a);
         }
-
-        if (flag == true) {
-            break;
-        }
-
-        i++;
 
     }
 
