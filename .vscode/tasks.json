@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Run Current File",
+        "type": "shell",
+       "command": "New-Item -ItemType Directory -Force -Path '${fileDirname}/build' | Out-Null; g++ -std=c++17 -O2 -o ${fileDirname}/build/${fileBasenameNoExtension} ${file}; ${fileDirname}/build/${fileBasenameNoExtension}",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"],
+        "presentation": {
+          "focus": true
+        }
+      }
+    ]
+  }
