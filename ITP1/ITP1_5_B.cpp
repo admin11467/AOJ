@@ -17,12 +17,11 @@ int main(){
 
     }
 
-
-    for (size_t x =0; x < h.size(); x++){
+    for (size_t x = 0; x < h.size(); x++){
 
         for(int hi = 0; hi < h[x]; hi++){
 
-            for(int wi =0; wi < w[x]; wi++){
+            for(int wi = 0; wi < w[x]; wi++){
 
                 if(hi == 0 || hi == h[x]-1){
                     std::cout << "#"; 
