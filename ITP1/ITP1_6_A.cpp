@@ -7,7 +7,9 @@ int main(){
     std::vector<int> a;
 
     for(int i = 0;i < n;i++){    
-
+        int temp;
+        std::cin >> temp;
+        a.push_back(temp);
     }
 
     for(size_t i = a.size();i > 0;i = i - 1){
@@ -16,6 +18,4 @@ int main(){
     }
     std::cout << std::endl;
 
-}        int temp;
-        std::cin >> temp;
-        a.push_back(temp);
+}
